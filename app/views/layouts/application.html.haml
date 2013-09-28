@@ -6,7 +6,7 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    .containe
+    .container-fluid
       .navbar.navbar-inverse.navbar-fixed-top
         .navbar-inner
           .container
@@ -48,8 +48,8 @@
                   %br
                   = link_to 'Registrarse', new_user_registration_path
 
-
-
-
             / /.nav-collapse
-        = yield
+        .span2
+        .span8
+          = yield
+        .span2
