@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.14'
 
-gem 'mongoid'
+gem "mongoid", "~> 3.0.0"
 gem 'devise'
 gem 'cancan'
 
