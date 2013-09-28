@@ -7,8 +7,10 @@ class User
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
+  validates :name, presence: true
 
   ## Database authenticatable
+  field :name,              :type => String, :default => ""
   field :email,              :type => String, :default => ""
   field :encrypted_password, :type => String, :default => ""
 
@@ -25,6 +27,9 @@ class User
   field :last_sign_in_at,    :type => Time
   field :current_sign_in_ip, :type => String
   field :last_sign_in_ip,    :type => String
+
+
+  has_many :tweets
 
   ## Confirmable
   # field :confirmation_token,   :type => String

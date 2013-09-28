@@ -3,7 +3,7 @@
 
   .form-inputs
     = f.input :message
-    = f.association :user
+    = f.input :user, collection: User.all
 
   .form-actions
     = f.button :submit
