@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.14'
 
+
 gem "mongoid", "~> 3.0.0"
 gem 'devise'
 gem 'cancan'
@@ -28,12 +29,13 @@ gem 'jquery-rails'
 gem 'haml'
 gem 'simple_form'
 gem 'thin'
-gem 'bootstrap-sass', '~> 2.2.2.0' # must specify version
+gem 'bootstrap-sass', '~> 2.3.2.1'
 
 group :development, :staging do
   gem 'hirb'
   gem 'wirble'
   gem 'wirb'
+  gem 'awesome_print'
   gem 'haml-rails'
   gem 'quiet_assets'
 end
