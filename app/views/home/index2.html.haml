@@ -1,0 +1,289 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "utf-8"}/
+    %title Fallen Gods
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
+    %meta{content: "RPG game mythological", name: "description"}/
+    %meta{content: "Fables Studios", name: "author"}/
+    / Le styles
+    %link{href: "../assets/css/bootstrap.css", rel: "stylesheet"}/
+    %link{href: "../assets/css/bootstrap-responsive.css", rel: "stylesheet"}/
+    :css
+      /* GLOBAL STYLES
+      -------------------------------------------------- */
+      /* Padding below the footer and lighter body text */
+
+      body {
+        padding-bottom: 40px;
+        color: #5a5a5a;
+      }
+      body {
+              padding-top: 50px;
+              padding-bottom: 20px;
+            }
+
+
+
+      /* CUSTOMIZE THE NAVBAR
+      -------------------------------------------------- */
+
+      /* Special class on .container surrounding .navbar, used for positioning it into place. */
+      .navbar-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        margin-top: 20px;
+        margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+      }
+      .navbar-wrapper .navbar {
+
+      }
+
+      /* Remove border and change up box shadow for more contrast */
+      .navbar .navbar-inner {
+        border: 0;
+        -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+           -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+                box-shadow: 0 2px 10px rgba(0,0,0,.25);
+      }
+
+      /* Downsize the brand/project name a bit */
+      .navbar .brand {
+        padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+        font-size: 16px;
+        font-weight: bold;
+        text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+      }
+
+      /* Navbar links: increase padding for taller navbar */
+      .navbar .nav > li > a {
+        padding: 15px 20px;
+      }
+
+      /* Offset the responsive button for proper vertical alignment */
+      .navbar .btn-navbar {
+        margin-top: 10px;
+      }
+
+
+
+      /* CUSTOMIZE THE CAROUSEL
+      -------------------------------------------------- */
+
+      /* Carousel base class */
+      .carousel {
+        margin-bottom: 60px;
+      }
+
+      .carousel .container {
+        position: relative;
+        z-index: 9;
+      }
+
+      .carousel-control {
+        height: 80px;
+        margin-top: 0;
+        font-size: 120px;
+        text-shadow: 0 1px 1px rgba(0,0,0,.4);
+        background-color: transparent;
+        border: 0;
+        z-index: 10;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        height: 500px;
+      }
+
+      .carousel-caption {
+        background-color: transparent;
+        position: static;
+        max-width: 550px;
+        padding: 0 20px;
+        margin-top: 200px;
+      }
+      .carousel-caption h1,
+      .carousel-caption .lead {
+        margin: 0;
+        line-height: 1.25;
+        color: #fff;
+        text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      }
+      .carousel-caption .btn {
+        margin-top: 10px;
+      }
+
+
+
+      /* MARKETING CONTENT
+      -------------------------------------------------- */
+
+      /* Center align the text within the three columns below the carousel */
+      .marketing .span4 {
+        text-align: center;
+      }
+      .marketing h2 {
+        font-weight: normal;
+      }
+      .marketing .span4 p {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    / HTML5 shim, for IE6-8 support of HTML5 elements
+    /[if lt IE 9]
+      <script src="../assets/js/html5shiv.js"></script>
+    / Fav and touch icons
+    %link{href: "../assets/ico/apple-touch-icon-144-precomposed.png", rel: "apple-touch-icon-precomposed", sizes: "144x144"}/
+    %link{href: "../assets/ico/apple-touch-icon-114-precomposed.png", rel: "apple-touch-icon-precomposed", sizes: "114x114"}/
+    %link{href: "../assets/ico/apple-touch-icon-72-precomposed.png", rel: "apple-touch-icon-precomposed", sizes: "72x72"}/
+    %link{href: "../assets/ico/apple-touch-icon-57-precomposed.png", rel: "apple-touch-icon-precomposed"}/
+    %link{href: "../assets/ico/favicon.png", rel: "shortcut icon"}/
+    %style#holderjs-style{type: "text/css"}
+      :cdata
+        \.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}
+    %meta#chromesniffer_meta{content: "{\"Bootstrap\":-1,\"jQuery\":\"1.9.1\"}", name: "chromesniffer"}/
+    %script{src: "chrome-extension://homgcnaoacgigpkkljjjekpignblkeae/detector.js", type: "text/javascript"}
+  %body
+    /
+      Carousel
+      \==================================================
+    %container
+      #myCarousel.carousel.slide
+        .carousel-inner
+          .item.active
+            =image_tag ("background_fallen_gods.png"), {alt: "First slide", "data-src" => "holder.js/100%x500/auto/#777:#7a7a7a/text:First slide", style: "height: 500px; width: 100%; display: block;"}
+            .container
+              .carousel-caption
+                %h1 Fallen Gods
+                %p.lead provee una experiencia de juego de Rol de combate con docenas de Héroes y villanos basados en los distintos mitos y leyendas del mundo, Perseo, Ulises, Hércules, Zeus, Hades, Cronos, Entre otros. Para ser el primero en descubrirlo
+                %a.btn.btn-large.btn-primary{href: "#"} Suscribete ahora.
+          .item
+            =image_tag ("background_fallen_gods.png"), {alt: "Second slide"}
+            .container
+              .carousel-caption
+                %h1 Un juego de rol o RPG (Role Play Game)
+                %p.lead que se caracteriza por el combate por turnos, el proceso de progresión del protagonista, la adición de varios personajes con su propio sistema de experiencia y nivel, el sistema de runas y el uso de profesiones. Toma conceptos de los juegos de multijugador masivo, al permitir interactuar a varios jugadores mediante alianzas y torneos.
+                /%a.btn.btn-large.btn-primary{href: "#"} Learn more
+          .item
+            =image_tag ("background_fallen_gods.png"), {alt: "Third slide", "data-src" => "holder.js/100%x500/auto/#777:#7a7a7a/text:Third slide", style: "height: 500px; width: 100%; display: block;"}
+            .container
+              .carousel-caption
+                %h1 One more for good measure.
+                %p.lead Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                %a.btn.btn-large.btn-primary{href: "#"} Browse gallery
+        %a.left.carousel-control{"data-slide" => "prev", href: "#myCarousel"} ‹
+        %a.right.carousel-control{"data-slide" => "next", href: "#myCarousel"} ›
+      / /.carousel
+      / START THE FEATURETTES
+    .container#history.history
+      .span12
+        %hr.featurette-divider
+        .featurette
+          %h2.featurette-heading
+            Primer capitulo Myths.
+            %span.muted Unete a la saga.
+            %iframe{allowfullscreen: "", frameborder: "0", height: "500", src: "//www.youtube.com/embed/WjvAcBe4Xz0", width: "100%"}
+        %hr.featurette-divider/
+    / /END THE FEATURETTES
+    /
+      Marketing messaging and featurettes
+      \==================================================
+
+    / Wrap the rest of the page in another container to center all the content.
+    .container#actors.actors
+      .span12
+        %h2.featurette-heading
+          Personajes.
+          %span.muted Heroes y villanos.
+        / Three columns of text below the carousel
+        .row
+          .span4
+            =image_tag ("heros/Concept_Atenea.jpg"), {alt: "Atenea", "data-src" => "holder.js/100%x300/auto/#777:#7a7a7a/text:First slide", style: "height: 400px; width: 100%; display: block;"}
+            %h2 Atenea
+            %p Hija partenogenética de Zeus, nacida de su frente completamente armada después de que se tragase a su madre. Jamás se casó o tuvo amantes, manteniendo una virginidad perpetua. Era imbatible en la guerra, ni el mismo Ares pudo derrotarla.
+          / /.span4
+          .span4
+            =image_tag ("heros/Concept_Skull_Soldier.jpg"), {alt: "Skull Soldier", "data-src" => "holder.js/100%x300/auto/#777:#7a7a7a/text:First slide", style: "height: 400px; width: 100%; display: block;"}
+            %h2 Soldado Esqueleto
+            %p El Objetivo principal es desarrollar un sistema de juego solido al que se pueda introducir contenido de forma periódica sin dificultad, en un principio se empezara con referentes de la mitología Griega pero se planea la adición de otras mitologías como la nórdica o latinoamericana en un futuro, por otra parte se desarrollaran juegos con mecánicas diferentes pero utilizando el mismo universo literario creado para Fallen Gods.
+          / /.span4
+          .span4
+            =image_tag ("heros/Ekidna.jpg"), {alt: "Skull Soldier", "data-src" => "holder.js/100%x300/auto/#777:#7a7a7a/text:First slide", style: "height: 400px; width: 100%; display: block;"}
+            %h2 Ekidna
+            %p Monstruosa ninfa, considerada descendiente de Forcis y Ceto o de Tártaro y Gea. Era un ser a veces llamado Drakaina Delphyne, descrita por Hesíodo en su Teogonía como un monstruo femenino, madre con Tifón de todos los monstruos importantes de los mitos griegos. Tenía el torso de una bella mujer de temibles ojos oscuros pero cuerpo de serpiente.
+          / /.span4
+        / /.row
+      //contact area
+    .container#contact.contact
+      .span12
+        %h2.featurette-heading
+          Para mayor información.
+          %span.muted Contactanos.
+      %form.well.span12
+        .row
+          .span4
+            %label Nombres
+            %input.span4{placeholder: "Your First Name", type: "text"}/
+            %label Apellidos
+            %input.span4{placeholder: "Your Last Name", type: "text"}/
+            %label Dirección Email
+            %input.span4{placeholder: "Your email address", type: "text"}/
+            %label Asunto
+            %select#subject.span4{name: "asunto"}
+              %option{selected: "Selecione", value: "na"}
+                Seleccione uno:
+              %option{value: "servicio"}
+                Asuntos generales del servicio
+              %option{value: "sugerencia"}
+                Sugerencias
+              %option{value: "empleo"}
+                Empleo
+          .span8
+            %label Mensaje
+            %textarea#message.input-xlarge.span5{name: "message", rows: "10"}
+          %button.btn.btn-info.pull-right{type: "submit"} Enviar
+          //end contact area
+      / FOOTER
+      %footer
+        %p.pull-right
+          %a{href: "#"} Back to top
+        %p
+          © 2013 Fables Studios Company, Inc. ·
+          %a{href: "#"} Privacy
+          ·
+          %a{href: "#"} Terms
+        / /.container
+        /
+          Le javascript
+          \==================================================
+        / Placed at the end of the document so the pages load faster
+        %script{src: "../assets/js/jquery.js"}
+        %script{src: "../assets/js/bootstrap-transition.js"}
+        %script{src: "../assets/js/bootstrap-alert.js"}
+        %script{src: "../assets/js/bootstrap-modal.js"}
+        %script{src: "../assets/js/bootstrap-dropdown.js"}
+        %script{src: "../assets/js/bootstrap-scrollspy.js"}
+        %script{src: "../assets/js/bootstrap-tab.js"}
+        %script{src: "../assets/js/bootstrap-tooltip.js"}
+        %script{src: "../assets/js/bootstrap-popover.js"}
+        %script{src: "../assets/js/bootstrap-button.js"}
+        %script{src: "../assets/js/bootstrap-collapse.js"}
+        %script{src: "../assets/js/bootstrap-carousel.js"}
+        %script{src: "../assets/js/bootstrap-typeahead.js"}
+        :javascript
+          !function ($) {
+            $(function(){
+              // carousel demo
+              $('#myCarousel').carousel()
+            })
+          }(window.jQuery)
+        %script{src: "../assets/js/holder/holder.js"}

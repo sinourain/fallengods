@@ -11,7 +11,7 @@
   - @tweets.each do |tweet|
     %tr
       %td= tweet.message
-      %td= tweet.user
+      %td= tweet.user.name
       %td= link_to 'Show', tweet
       %td= link_to 'Edit', edit_tweet_path(tweet)
       %td= link_to 'Destroy', tweet, :method => :delete, :data => { :confirm => 'Are you sure?' }
